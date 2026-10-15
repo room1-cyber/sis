@@ -34,7 +34,7 @@ const APPOINTMENT_TONE = {
 export function CustomerDetail() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const { t, pick, money, num, date, diopter } = useI18n();
+  const { t, money, num, date, diopter } = useI18n();
   const toast = useToast();
   const confirm = useConfirm();
   const { hasPermission } = useAuth();
