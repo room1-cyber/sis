@@ -1,4 +1,5 @@
 import type { User } from '@/types';
+import type { TranslationKey } from '@/i18n/ar';
 
 /* ---------------------------------------------------------------------------
  * Role based permissions.
@@ -134,14 +135,14 @@ export function permissionsOf(role: User['role']): Permission[] {
 
 export const ROLES: User['role'][] = ['admin', 'manager', 'cashier', 'optometrist'];
 
-export const ROLE_LABEL_KEY: Record<User['role'], string> = {
+export const ROLE_LABEL_KEY: Record<User['role'], TranslationKey> = {
   admin: 'auth.role.admin',
   manager: 'auth.role.manager',
   cashier: 'auth.role.cashier',
   optometrist: 'auth.role.optometrist',
 };
 
-export const PERMISSION_LABEL_KEY: Record<Permission, string> = {
+export const PERMISSION_LABEL_KEY: Record<Permission, TranslationKey> = {
   'dashboard.view': 'users.perm.dashboard',
   'pos.use': 'users.perm.pos',
   'invoices.view': 'users.perm.invoicesView',
