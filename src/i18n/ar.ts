@@ -839,3 +839,7 @@ export const ar = {
 
 
 };
+
+/** Every valid translation key – derived from the Arabic dictionary. */
+export type TranslationKey = keyof typeof ar;
+
